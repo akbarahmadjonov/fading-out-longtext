@@ -10,7 +10,7 @@ A responsive card component with a fading out long text effect and a "View More"
 
 ## Demo
 
-![Demo](images/fading-out-text-card-demo.png)
+<img src='screen.png' width='500' />
 
 ## Installation
 
