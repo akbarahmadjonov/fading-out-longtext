@@ -1,0 +1,79 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.3s ease;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-container {
+  max-height: 140px;
+  overflow: hidden;
+  position: relative;
+  line-height: 1.6;
+  transition: max-height 0.3s ease;
+}
+
+.text-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(transparent, #ffffff);
+}
+
+.view-more-btn {
+  display: block;
+  margin: 15px auto 0 auto;
+  padding: 10px 20px;
+  color: #007bff;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+  }
+
+  .view-more-btn {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
